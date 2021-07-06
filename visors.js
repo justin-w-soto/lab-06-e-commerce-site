@@ -27,7 +27,7 @@ const v3 = {
     image: 'visor3.png',
     description: 'Business casual',
     category: 'home improvement',
-    price: 4.00
+    price: 40.00
 };
 
 const v4 = {
@@ -77,7 +77,7 @@ const v8 = {
 
 const v9 = {
     id: 'visor9',
-    name: 'Sharron on Safari',
+    name: 'Sharon on Safari',
     image: 'visor9.png',
     description: 'spf 50',
     category: 'sporting goods',
