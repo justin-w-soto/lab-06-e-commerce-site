@@ -1,1 +1,41 @@
 /* add home page styles here */
+body {
+    font-family:fantasy;
+    background: linear-gradient(teal, purple , azure)
+}
+#visors {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#visors li {
+width: 200px;
+height: 500px;
+border: 7px solid hotpink;
+border-radius: 5px;
+padding: 10px;
+margin: 10px;
+background-color: white;
+}
+
+#visors li h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    list-style:none;
+    text-align: center;
+    color: hotpink;
+    text-shadow: 2px 2px 2px rgb(107, 105, 105);
+}
+
+
+#visors li img {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+}
+
+button {
+    margin: 10px;
+    
+}
