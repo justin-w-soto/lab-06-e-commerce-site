@@ -1,8 +1,10 @@
 // import functions and grab DOM elements
+import visors from './visors.js';
+import { renderVisors } from './render-visors.js';
+console.log(visors);
 
-// initialize state
-
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+const visorsUL = document.getElementById('visors');
+for (let visor of visors) {
+    const visorLI = renderVisors(visor);
+    visorsUL.appendChild(visorLI);
+}
