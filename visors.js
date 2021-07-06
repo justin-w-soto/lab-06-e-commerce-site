@@ -16,7 +16,7 @@ const v2 = {
     id: 'visor2',
     name: 'The Bernice',
     image: 'visor2.png',
-    description: 'Bluer than Miles Davis',
+    description: 'It is blue.',
     category: 'tropical',
     price: 20.00
 };
@@ -25,7 +25,7 @@ const v3 = {
     id: 'visor3',
     name: 'Hammerhead',
     image: 'visor3.png',
-    description: 'Business casual',
+    description: 'Impress your friends',
     category: 'home improvement',
     price: 40.00
 };
@@ -34,7 +34,7 @@ const v4 = {
     id: 'visor4',
     name: 'Toby the barista',
     image: 'visor4.png',
-    description: 'July favorite',
+    description: 'Now in grande',
     category: 'Business casual',
     price: 40.00
 };
@@ -88,7 +88,7 @@ const v10 = {
     id: 'visor10',
     name: 'Xmas in New Jersey',
     image: 'visor10.png',
-    description: 'Too cold to hold',
+    description: 'Nanas secret recipe',
     category: 'Business casual',
     price: 59.00
 };

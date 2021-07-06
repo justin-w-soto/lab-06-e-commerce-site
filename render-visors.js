@@ -9,6 +9,9 @@ export function renderVisors(visor){
     
     const visorSpan = document.createElement('span');
     visorSpan.textContent = `$${visor.price}`;
+
+    const visorD = document.createElement('p');
+    visorD.textContent = `${visor.description}`;
     
     const button = document.createElement('button');
     button.textContent = 'Add to Cart';
@@ -16,6 +19,7 @@ export function renderVisors(visor){
     visorLI.appendChild(visorh3);
     visorLI.appendChild(visorImg);
     visorLI.appendChild(visorSpan);
+    visorLI.appendChild(visorD);
     visorLI.appendChild(button);
 
     return visorLI;

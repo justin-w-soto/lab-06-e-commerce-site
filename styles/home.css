@@ -14,13 +14,17 @@ width: 200px;
 height: 500px;
 border: 7px solid hotpink;
 border-radius: 5px;
-padding: 45px;
-margin: 10px;
+padding:50px;
+margin:10px;
 background-color: white;
 text-align: center;
 color: purple;
-font-size: 3rem;
+font-size: 2.5rem;
 list-style: none;
+}
+
+p {
+    font-size: 1rem;
 }
 
 #visors li h3 {
@@ -36,18 +40,14 @@ list-style: none;
 
 #visors li img {
     width: 200px;
-    height: auto;
-    padding: 10px;
     text-align: center;
  
 }
 
 button {
-    margin: 20px;
     text-align: center;
     background-color: teal;
     color: white;
     font-size: large;
     box-shadow: 3px 3px 3px darkgrey;
-    
 }
