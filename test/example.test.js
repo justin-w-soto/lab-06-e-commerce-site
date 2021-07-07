@@ -1,6 +1,7 @@
 // IMPORT MODULES under test here:
 
 import { renderVisors } from '../render-visors.js';
+import { renderTableRow } from '../utils.js';
 const test = QUnit.test;
 
 test('does the js insert new li into html in browser', (expect) => {
@@ -16,3 +17,10 @@ test('does the js insert new li into html in browser', (expect) => {
     const actual = renderVisors(v1);
     expect.equal(actual.outerHTML, janetLi);
 });
+
+test('renderTableRow returns a <tr> element', expect => {
+    const expected = `<tr><td></td><td></td><td></td><td></td></tr>`;
+    const actual = renderTableRow(visor, visorCart).outerHTML;
+    const html = dom.HTML;
+    expect.equal(html, expected);
+})
