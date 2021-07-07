@@ -1,6 +1,15 @@
+body {
+   display: flex;
+   flex-wrap:wrap;
+   text-align: center; 
+   justify-content: center; 
+}
+
 table {
     border-collapse: collapse;
     border: 1px solid black;
+    margin: 20px;
+    width: 600px;
 
 }
 
@@ -14,3 +23,4 @@ table th, table td {
     padding: 10px;
     text-align: right;
 }
+
