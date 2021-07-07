@@ -14,24 +14,33 @@ export function toUSD(number) {
         'en-US', { style: 'currency', currency: 'USD' });
 }
 
-
-export function renderTableRow(visorItem, cartItem) {
+export function renderTableRow(visorItem, cartItem){
     const tr = document.createElement('tr');
     const tdName = document.createElement('td');
-    tdName.textContent = cartItem.name;
+    tdName.textContent = visorItem.name;
     tr.appendChild(tdName);
-
+    
     const tdPrice = document.createElement('td');
-    tdPrice.textContent = cartItem.name;
-    tr.appendChild(tdName);
-    return tr;
-
+    tdPrice.textContent = toUSD(visorItem.price);
+    tr.appendChild(tdPrice);
+    
     const tdQty = document.createElement('td');
     tdQty.textContent = cartItem.qty;
     tr.appendChild(tdQty);
 
     const tdTotal = document.createElement('td');
     const total = visorItem.price * cartItem.qty;
-    tdTotal.textContent = toUSD(total)
+    tdTotal.textContent = toUSD(total);
+    tr.appendChild(tdTotal);
 
+    return tr;
+
+}
+
+export function getTotal(visors, cart) {
+    let orderTotal = 0;
+    for (let item of cart) {
+        const visor = findById(visors, item.id);
+        orderTotal += visor.price * item.qty;
+    } return orderTotal;
 }

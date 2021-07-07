@@ -11,5 +11,6 @@ thead {
 }
 
 table th, table td {
-
+    padding: 10px;
+    text-align: right;
 }
