@@ -1,26 +1,18 @@
 body {
    display: flex;
-   flex-wrap:wrap;
    text-align: center; 
    justify-content: center; 
+   
 }
 
 table {
     border-collapse: collapse;
-    border: 1px solid black;
+    border: 5px hotpink solid;
+    border-radius: 10px;
     margin: 20px;
     width: 600px;
+    font-size: 2rem;
+    
 
-}
-
-thead { 
-    background-color: wheat;
-
-
-}
-
-table th, table td {
-    padding: 10px;
-    text-align: right;
 }
 
