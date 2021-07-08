@@ -1,18 +1,48 @@
 body {
    display: flex;
    text-align: center; 
-   justify-content: center; 
+   justify-content: center;  
+   background-image: url(../assets/visor6.png); 
    
 }
 
 table {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-collapse: collapse;
-    border: 5px hotpink solid;
-    border-radius: 10px;
+    border: 10px hotpink solid;
     margin: 20px;
     width: 600px;
-    font-size: 2rem;
-    
-
+    height: 250px;
+    font-size: 1.5rem;
+    background: teal;
+    color: white;
+    box-shadow: 5px 5px 5px rgb(92, 88, 88);
 }
 
+thead {
+    background: rgb(36, 167, 123);
+}
+
+tfoot {
+    background:rgb(36, 167, 123);
+}
+
+h1 {
+    color:rgb(0, 255, 221);
+    font-size: 100px;
+    text-shadow: 5px 5px 5px rgb(39, 38, 38);
+    font-family:fantasy;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+a:hover {
+    color: rgb(0, 255, 221);
+    font-size: 60px;
+    text-shadow: 5px 5px 5px rgb(82, 82, 82);
+    font-family:fantasy;
+}

@@ -44,3 +44,4 @@ export function getTotal(visors, cart) {
         orderTotal += visor.price * item.qty;
     } return orderTotal;
 }
+
