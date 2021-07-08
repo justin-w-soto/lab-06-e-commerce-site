@@ -1,27 +1,39 @@
 /* add home page styles here */
 body {
-    font-family:fantasy;
-    background: linear-gradient(teal, purple , azure)
+    font-family: fantasy;
+    background: linear-gradient(teal, purple , azure);
+    text-align: center;
+}
+
+h1 {
+    color: rgb(76, 202, 125);
+    font-size: 100px;
+    text-shadow: 5px 5px 5px rgb(26, 24, 24);
+    
 }
 
 #visors {
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
+}
+
+#visors li:hover {
+color: red;
+font-size:50px;
+text-shadow: 5px 5px 5px rgb(136, 130, 130);
 }
 
 #visors li {
-width: 200px;
-height: 500px;
+width: 150px;
+height: 400px;
 border: 7px solid hotpink;
-border-radius: 5px;
 padding:50px;
-margin:10px;
 background-color: white;
 text-align: center;
 color: purple;
 font-size: 2.5rem;
 list-style: none;
+margin: 10px;
 }
 
 p {
@@ -40,7 +52,7 @@ p {
 
 
 #visors li img {
-    width: 200px;
+    width: 100px;
     text-align: center;
  
 }
@@ -52,3 +64,18 @@ button {
     font-size: large;
     box-shadow: 3px 3px 3px darkgrey;
 }
+
+#cart-link {
+    font-size: 30px;
+    text-decoration: none;
+    margin-bottom: 5rem;
+
+}
+
+#cart-link:hover {
+    color: hotpink;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px darkgray;
+
+}
+

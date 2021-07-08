@@ -54,7 +54,7 @@ const v6 = {
     image: 'visor6.png',
     description: 'Pink & bulletproof',
     category: 'tactical gear',
-    price: 7.50
+    price: 75.00
 };
 
 const v7 = {
