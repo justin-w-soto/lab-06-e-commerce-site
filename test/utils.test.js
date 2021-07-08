@@ -3,6 +3,8 @@
 import { renderVisors } from '../render-visors.js';
 import { findById, getTotal, renderTableRow } from '../utils.js';
 import visors from '../data/visors.js';
+import './storage-utils.test.js';
+
 
 const test = QUnit.test;
 
