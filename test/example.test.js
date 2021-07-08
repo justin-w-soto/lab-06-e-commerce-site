@@ -27,7 +27,7 @@ test('returns visors by id', expect => {
         image: 'visor6.png',
         description: 'Pink & bulletproof',
         category: 'tactical gear',
-        price: 7.50
+        price: 75.00
     };
     const actual = findById(visors, 'visor6');
     expect.deepEqual(actual, expected);
