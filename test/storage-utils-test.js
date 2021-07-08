@@ -1,7 +1,7 @@
 import { CART, getCart, addItemtoCart, clearCart } from '../storage-utils.js';
 const test = QUnit.test;
 
-test('getCart return the shopping cart from localStorage as object', (expect) => {
+test('getCart returns cart from localStorage', (expect) => {
     const myFakeCart = [
         { id: 'visor1', qty: 2 },
         { id: 'visor6', qty: 3 },
@@ -14,7 +14,7 @@ test('getCart return the shopping cart from localStorage as object', (expect) =>
     expect.deepEqual(cart, myFakeCart);
 });
 
-test('getCart should return an empty array if the cart is empty', expect => {
+test('getCart returns empty array if cart is empty', expect => {
     localStorage.removeItem(CART);
     
     const cart = getCart();
@@ -23,7 +23,7 @@ test('getCart should return an empty array if the cart is empty', expect => {
     expect.deepEqual(cart, expected);
 });
 
-test('addItemtoCart should update quantity if item already in cart', expect => {
+test('addItemtoCart updates quantity in cart', expect => {
     const myFakeCart = [
         { id: 'visor1', qty: 2 },
         { id: 'visor6', qty: 3 },
@@ -44,7 +44,7 @@ test('addItemtoCart should update quantity if item already in cart', expect => {
 
 });
 
-test('addItem to cart should add an item if its not already there', expect => {
+test('addItemToCart adds an item if its not already there', expect => {
     const myFakeCart = [
         { id: 'visor1', qty: 2 },
         { id: 'visor6', qty: 3 },

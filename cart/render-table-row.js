@@ -1,8 +1,9 @@
 import { toUSD } from '../utils.js';
 
+
 export function renderTableRow(visorItem, cartItem){
     const tr = document.createElement('tr');
-    const tdName = document.createElement('td');
+    let tdName = document.createElement('td');
     tdName.textContent = visorItem.name;
     tr.appendChild(tdName);
     
