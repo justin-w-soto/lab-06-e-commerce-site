@@ -3,6 +3,7 @@ body {
     font-family:fantasy;
     background: linear-gradient(teal, purple , azure)
 }
+
 #visors {
     display: flex;
     flex-wrap: wrap;
