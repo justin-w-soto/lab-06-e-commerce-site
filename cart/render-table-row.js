@@ -7,6 +7,8 @@ export function renderTableRow(visorItem, cartItem){
     tdName.textContent = visorItem.name;
     tr.appendChild(tdName);
     
+
+    
     const tdPrice = document.createElement('td');
     tdPrice.textContent = toUSD(visorItem.price);
     tr.appendChild(tdPrice);
