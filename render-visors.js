@@ -15,6 +15,8 @@ export function renderVisors(visor){
     
     const button = document.createElement('button');
     button.textContent = 'Add to Cart';
+    button.value = visor.id;
+    button.classList.add('add');
     
     visorLI.appendChild(visorh3);
     visorLI.appendChild(visorImg);

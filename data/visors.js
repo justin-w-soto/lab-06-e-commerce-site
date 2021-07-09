@@ -25,7 +25,7 @@ const v3 = {
     id: 'visor3',
     name: 'Hammerhead',
     image: 'visor3.png',
-    description: 'Impress your friends',
+    description: 'Impress your friends', 
     category: 'home improvement',
     price: 40.00
 };
