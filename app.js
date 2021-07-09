@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import visors from './visors.js';
+import visors from './data/visors.js';
 import { renderVisors } from './render-visors.js';
 import { addItemtoCart } from './storage-utils.js';
 
@@ -12,6 +12,6 @@ const addButtons = document.querySelectorAll('.add');
 for (let button of addButtons) {
     button.addEventListener('click', (e)=>{
         //console.log('did the click work?', e.target.value);
-        addItemtoCart(Number(e.target.value));
+        addItemtoCart(e.target.value);
     });
 }

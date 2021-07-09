@@ -12,7 +12,9 @@ export function getCart(){
 
 export function addItemtoCart(itemId){
     const cart = getCart();
+    console.log(cart);
     const item = findById(cart, itemId);
+    console.log(itemId);
    
     if (item) {
         item.qty += 1; 

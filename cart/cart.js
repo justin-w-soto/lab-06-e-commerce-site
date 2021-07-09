@@ -6,8 +6,10 @@ import { getCart, clearCart } from '../storage-utils.js';
 const tableBody = document.getElementById('table-body');
 function renderCart(){
     const cart = getCart();
+    console.log(cart);
     for (let item of cart) {
         const visor = findById(visors, item.id);
+        console.log(item);
         const tr = renderTableRow(visor, item);
         tableBody.appendChild(tr);
     }
