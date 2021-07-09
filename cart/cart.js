@@ -19,9 +19,18 @@ function renderCart(){
     totalDom.textContent = toUSD(total);
 }
 renderCart();
-
+const orderBtn = document.getElementById('place-order');
+orderBtn.addEventListener('click', ()=> {
+    alert('Are you sure you would like to purchase these stupid hats?');
+    clearCart(); 
+    location.href = '../';
+});
 const clearBtn = document.getElementById('clear');
 clearBtn.addEventListener('click', ()=> {
     clearCart(); 
     location.reload();
-});
+   
+});    
+
+
+
