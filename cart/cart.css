@@ -45,3 +45,22 @@ a:hover {
     text-shadow: 5px 5px 5px rgb(82, 82, 82);
     font-family:fantasy;
 }
+
+button {
+    background: rgb(255, 0, 157);
+    color: white;
+    border: white solid 3px;
+    border-radius: 3px;
+    font-size: 20px;
+    width: 200px;
+    box-shadow: 5px 5px 5px rgb(65, 63, 63);
+    margin: 10px;
+}
+
+button:hover {
+    background: white;
+    color:rgb(255, 0, 157);
+    border: rgb(255, 0, 157) solid 3px;
+    opacity: 70%;
+    cursor: pointer;
+}
